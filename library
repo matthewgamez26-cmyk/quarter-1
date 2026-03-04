@@ -1,3 +1,8 @@
+Arduino
+  code to add points when passing IR sensors
+  code to have solenoid trigger bumpers to swing and hit ball after set off
+  code to have scoreboard change passed on point totals
+
 Scoreboard
   when pass IR sensors add points to score
 
