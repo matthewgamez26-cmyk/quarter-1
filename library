@@ -1,0 +1,9 @@
+Scoreboard
+  when pass IR sensors add points to score
+
+IR sensor 
+  when ball passes through past points added to score
+  different sensors produce different point totals
+
+Solenoid bumper sensors
+  activate bumpers when button pressed or senses ball
