@@ -1,4 +1,4 @@
-# quarter-1
+# Pinball semester 2
 /project_name
   ├── README.md
   ├── code/
