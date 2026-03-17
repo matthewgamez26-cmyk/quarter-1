@@ -1,1 +1,9 @@
-
+Initialize: Define pin connections, initialize the scoreboard (LCD/LED), set score to 0, and ensure the solenoid is closed/off.
+Monitor Sensor: The IR sensor constantly checks for objects like the ball passing through a goal.
+Detect Trigger: When the IR sensor detects a passing object the state changes from HIGH to LOW or vice-versa, triggering an event.
+Update Score: Increment the score variable by +1.
+Display Score: Update the scoreboard to show the new total.
+Check Condition: Compare the current score to the target score.
+Action - Solenoid Valve:
+If score < target: Do nothing.
+If score == target: Activate the solenoid valve (open/push) for a set duration, then turn it off (close/pull) and reset the score to 0.
