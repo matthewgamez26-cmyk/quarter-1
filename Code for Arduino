@@ -1,0 +1,35 @@
+#include <TM1637Display.h>
+
+#define CLK 2
+#define DIO 3
+#define SENSOR 4
+#define SOLENOID 8
+
+TM1637Display display(CLK, DIO);
+
+int score = 0;
+
+void setup() {
+  pinMode(SENSOR, INPUT);
+  pinMode(SOLENOID, OUTPUT);
+
+  display.setBrightness(7);
+  display.showNumberDec(score);
+}
+
+void loop() {
+
+  if (digitalRead(SENSOR) == LOW) {
+
+    score += 10;
+
+    display.showNumberDec(score);
+
+    digitalWrite(SOLENOID, HIGH);
+    delay(100);
+
+    digitalWrite(SOLENOID, LOW);
+
+    delay(300);
+  }
+}
