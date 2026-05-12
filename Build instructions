@@ -1,0 +1,66 @@
+Step 1: Build the Base
+
+Materials
+
+* Cardboard sheet
+* Tape or hot glue
+* Popsicle sticks
+
+What To Do
+
+1. Cut a large rectangle of cardboard.
+    * About 2 feet long
+    * About 1 foot wide
+2. Raise the top slightly using books or stacked cardboard.
+3. Make walls around the edges so the ball stays inside.
+
+Step 2: Make Obstacles
+
+Glue popsicle sticks onto the board to create:
+
+* lanes
+* ramps
+* bumpers
+* curves
+
+Try to make the ball bounce around instead of falling straight down.
+
+⸻
+
+Step 3: Add the Ball
+
+Use the steel pinball.
+
+Test rolling it around before adding electronics.
+
+⸻
+
+Step 4: Install the Score Sensor
+
+Your IR sensor has:
+
+* transmitter
+* receiver
+
+Put them across from each other so the beam crosses a lane.
+
+Step 5: Connect the Scoreboard
+
+Use the TM1637 display.
+
+Step 6: Connect the IR Sensor
+Step 7: Connect the Solenoid Bumper
+
+The solenoid acts like a real pinball bumper.
+
+IMPORTANT:
+Do NOT connect it directly to the Arduino.
+
+Use the ULN2003 driver.
+
+Step 8: Upload the Arduino Code
+
+Install:
+
+* Arduino IDE
+* TM1637Display library
